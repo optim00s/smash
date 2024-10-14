@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smash | a image compressor and editor</title>
+    <link rel="stylesheet" href="styles/output.css">
+  </head>
+  <body class="bg-smash text-white font-mono flex flex-col items-center justify-center min-h-screen overflow-hidden">
+    <header class="flex justify-center p-2">
+        <div class="text-xl font-bold tracking-widest">smash</div>
+    </header>
+    <main class="flex flex-col items-center gap-3 m-5">
+        <div class="js-image flex justify-center w-full h-[400px] md:w-[700px] border border-dashed border-indigo-400 rounded-xl">
+            <div class="flex items-center justify-center min-h-full">
+                <button class="js-add-image text-white/30 italic p-2">
+                    add image to make art pieces (drag & drop or click)
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between min-w-full gap-2">
+            <select class="bg-slate-800 px-5 py-2 rounded-lg cursor-pointer" name="" id="">
+                <option value="" selected disabled>--- Choose Effect ---</option>
+                <option value="ascii">ASCII</option>
+                <option value="dither">Dither</option>
+                <option value="monochrome">Monochrome</option>
+                <option value="pastel">Pastel</option>
+            </select>
+            <div class="flex items-center gap-2">
+                <button class="js-compress bg-slate-800 px-5 py-2 rounded-lg">smash</button>
+                <a class="js-download bg-slate-800 px-5 py-2 rounded-lg cursor-pointer" download="smash.jpg">download</a>            
+            </div>
+        </div>
+    </main>
+    <footer class="flex flex-col items-center justify-center text-white/60 text-sm gap-1">
+        <div>
+            made by <a href="https://optim00s.github.io" target="_blank" class="hover:underline">optim00s</a>
+        </div>
+        <div class="italic">
+            follow me on <a href="https://x.com/optim00s" target="_blank" class="hover:underline">x</a> 
+        </div>
+    </footer>
+  </body>
+  <script src="/script/smash.js"></script>
+</html>
